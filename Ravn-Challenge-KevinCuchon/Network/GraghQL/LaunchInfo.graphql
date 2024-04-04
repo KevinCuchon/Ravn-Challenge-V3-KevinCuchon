@@ -1,0 +1,15 @@
+
+query Launches {
+  launches {
+    mission_name
+    launch_date_utc
+    links {
+      video_link
+      
+    }
+    rocket {
+      rocket_name
+    }
+    details
+  }
+}

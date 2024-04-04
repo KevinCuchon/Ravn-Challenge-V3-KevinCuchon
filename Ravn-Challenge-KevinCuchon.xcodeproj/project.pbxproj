@@ -14,6 +14,11 @@
 		5FE0CEE42BBE545000E0CAE5 /* Ravn_Challenge_KevinCuchonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE0CEE32BBE545000E0CAE5 /* Ravn_Challenge_KevinCuchonTests.swift */; };
 		5FE0CEEE2BBE545100E0CAE5 /* Ravn_Challenge_KevinCuchonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE0CEED2BBE545100E0CAE5 /* Ravn_Challenge_KevinCuchonUITests.swift */; };
 		5FE0CEF02BBE545100E0CAE5 /* Ravn_Challenge_KevinCuchonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE0CEEF2BBE545100E0CAE5 /* Ravn_Challenge_KevinCuchonUITestsLaunchTests.swift */; };
+		5FE0CEFE2BBE54E600E0CAE5 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 5FE0CEFD2BBE54E600E0CAE5 /* Apollo */; };
+		5FE0CF002BBE54E600E0CAE5 /* Apollo-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 5FE0CEFF2BBE54E600E0CAE5 /* Apollo-Dynamic */; };
+		5FE0CF022BBE54E600E0CAE5 /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 5FE0CF012BBE54E600E0CAE5 /* ApolloAPI */; };
+		5FE0CF042BBE54E600E0CAE5 /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 5FE0CF032BBE54E600E0CAE5 /* ApolloSQLite */; };
+		5FE0CF082BBE570200E0CAE5 /* Network in Resources */ = {isa = PBXBuildFile; fileRef = 5FE0CF072BBE570200E0CAE5 /* Network */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,7 @@
 		5FE0CEE92BBE545100E0CAE5 /* Ravn-Challenge-KevinCuchonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ravn-Challenge-KevinCuchonUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FE0CEED2BBE545100E0CAE5 /* Ravn_Challenge_KevinCuchonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ravn_Challenge_KevinCuchonUITests.swift; sourceTree = "<group>"; };
 		5FE0CEEF2BBE545100E0CAE5 /* Ravn_Challenge_KevinCuchonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ravn_Challenge_KevinCuchonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5FE0CF072BBE570200E0CAE5 /* Network */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Network; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FE0CF022BBE54E600E0CAE5 /* ApolloAPI in Frameworks */,
+				5FE0CF042BBE54E600E0CAE5 /* ApolloSQLite in Frameworks */,
+				5FE0CEFE2BBE54E600E0CAE5 /* Apollo in Frameworks */,
+				5FE0CF002BBE54E600E0CAE5 /* Apollo-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +104,7 @@
 		5FE0CED12BBE544D00E0CAE5 /* Ravn-Challenge-KevinCuchon */ = {
 			isa = PBXGroup;
 			children = (
+				5FE0CF072BBE570200E0CAE5 /* Network */,
 				5FE0CED22BBE544D00E0CAE5 /* Ravn_Challenge_KevinCuchonApp.swift */,
 				5FE0CED42BBE544D00E0CAE5 /* ContentView.swift */,
 				5FE0CED62BBE545000E0CAE5 /* Assets.xcassets */,
@@ -143,6 +154,12 @@
 			dependencies = (
 			);
 			name = "Ravn-Challenge-KevinCuchon";
+			packageProductDependencies = (
+				5FE0CEFD2BBE54E600E0CAE5 /* Apollo */,
+				5FE0CEFF2BBE54E600E0CAE5 /* Apollo-Dynamic */,
+				5FE0CF012BBE54E600E0CAE5 /* ApolloAPI */,
+				5FE0CF032BBE54E600E0CAE5 /* ApolloSQLite */,
+			);
 			productName = "Ravn-Challenge-KevinCuchon";
 			productReference = 5FE0CECF2BBE544D00E0CAE5 /* Ravn-Challenge-KevinCuchon.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +232,9 @@
 				Base,
 			);
 			mainGroup = 5FE0CEC62BBE544D00E0CAE5;
+			packageReferences = (
+				5FE0CEFC2BBE54E500E0CAE5 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = 5FE0CED02BBE544D00E0CAE5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FE0CF082BBE570200E0CAE5 /* Network in Resources */,
 				5FE0CEDA2BBE545000E0CAE5 /* Preview Assets.xcassets in Resources */,
 				5FE0CED72BBE545000E0CAE5 /* Assets.xcassets in Resources */,
 			);
@@ -588,6 +609,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5FE0CEFC2BBE54E500E0CAE5 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5FE0CEFD2BBE54E600E0CAE5 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5FE0CEFC2BBE54E500E0CAE5 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		5FE0CEFF2BBE54E600E0CAE5 /* Apollo-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5FE0CEFC2BBE54E500E0CAE5 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = "Apollo-Dynamic";
+		};
+		5FE0CF012BBE54E600E0CAE5 /* ApolloAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5FE0CEFC2BBE54E500E0CAE5 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloAPI;
+		};
+		5FE0CF032BBE54E600E0CAE5 /* ApolloSQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5FE0CEFC2BBE54E500E0CAE5 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloSQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5FE0CEC72BBE544D00E0CAE5 /* Project object */;
 }
